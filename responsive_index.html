@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 4 Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	} #page{
+		width: 928px;
+		max-width: 95%;
+		height: auto;
+		min-height: 1228px;
+		background: white;
+		border: 0.5px solid darkgray;
+		margin: 0 auto;	
+	}h1 {
+		margin: 60px;
+		text-align: center;
+		font: 40pt/1em 'Macondo Swash Caps';
+		text-shadow: 2px 3px 4px lightblue;
+	} #button-bar {
+		width:100%;
+		margin: 25px;
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+		font: 12pt/3 'Montserrat';
+		font-weight: bold;
+	} #button-bar li{
+		width: 100px;
+		height: 100px;
+		background: rgba(255,206,219,0.89);
+		border-radius: 50%;
+		float: left;
+		text-align: center;
+		line-height: 6em;
+	} a {
+		color:darkgray;
+		text-decoration:none;
+	} #button-bar a li:hover{
+		background: rgba(255,146,165,0.20);
+	} body {
+		background: whitesmoke;
+	} #textbox {
+		border: 15px double lightblue;
+		width: 850px;
+		max-width: 90%;
+		height: auto;
+		min-height: 850px;
+		box-shadow: 2px 3px 6px gainsboro;
+		margin: auto;
+		display: grid;
+		grid-template-columns: auto auto ;
+		justify-content: center;
+	} img {
+		width: 250px;
+		max-width: 750px;
+		height: auto;
+		min-height: 200px;
+	} img:hover{
+		filter: saturate(1.1);
+		transform: scale(1.05);
+		transition: transform 0.5s;
+	} figure {
+		width: 250px;
+		background: lightpink;
+		margin: 10px 25px;
+	} figcaption{
+		font: 12pt/3 'Montserrat';
+		color: darkgray;
+		text-align: center;
+		margin: 0 auto;
+	} @media only screen and (max-width: 750px) {
+        #textbox {
+            grid-template-columns: auto;
+        } img {
+            width:50vw;
+			height:50vw;
+			align-content: center;
+    
+		} figure {
+			align-content: center;
+			width:50vw;
+			height:60vw;
+	}
+	}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<div id="Header">
+			<font color="#F06168">
+			<h1>King of Sweet Sweets</h1>
+			<header id = "button-bar">
+				<a href="#"><li>Recipes</li></a>
+				<li>Sweets</li>
+			<a href="#"><li>Create</li></a>
+			</header></font></div>
+		<div id="textbox">
+			<figure > <a href="Lychee Baklava.jpg"> 
+		 		 <img src="thumb_lychee baklava.jpg" alt="Lychee Baklava"/>
+		 		 </a>
+	     	 	<figcaption>
+			 	 Lychee Baklava 
+			 	 </figcaption>
+			</figure>
+			<figure>
+				<a href="Lychee Boba.jpg">
+				<img src="thumb_lychee boba.jpg" alt="Lychee boba"/>
+				</a>
+				<figcaption>
+					Lychee Boba
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="Lychee Icecream.jpg">
+				<img src="thumb_lychee icecream.jpg" alt="lychee icecream" />
+				</a>
+				<figcaption>
+				Lychee Icecream
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="Lychee Cheesecake.jpg">
+				<img src="thumb_lychee cheesecake.jpg" alt="lychee cheesecake" />
+				</a>
+				<figcaption>
+				Lychee Cheesecake
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="Lychee Mousse.jpg">
+				<img src="thumb_lychee mousse.jpg" alt="lychee 	mousse" />
+				</a>
+				<figcaption>
+				Lychee Mousse
+				</figcaption>
+				</figure>
+			<figure>
+				<a href="Lychee Pudding.jpg">
+				<img src="thumb_lychee pudding.jpg" alt="lychee pudding" />
+				</a>
+				<figcaption> Lychee Pudding </figcaption>
+			</figure></div>
+	</div>
+</body>
+</html>
