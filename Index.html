@@ -20,7 +20,7 @@
 		background: whitesmoke;
 	} #page {
 		width: 928px;
-		height: 1500px;
+		height: 1650px;
 		background: white;
 		border: 1px solid darkgray;
 		margin: 0 auto;
@@ -52,12 +52,42 @@
 		text-decoration:none;
 	} #button-bar a li:hover{
 		background: rgba(255,146,165,0.20);
-	}img{
+	} #lychee{
 		width: 200px;
 		float: left;
         margin: 6px 30px 20px 0;
         border: 2px solid #F06168;
         box-shadow: 3px 4px 6px lightblue;
+	} button{
+		width:70px;
+		margin:auto 60px;
+		display: block;
+		align: center;
+		font: 15pt/3 'Macondo Swash Caps';
+		color: crimson;
+		font-weight: bold;
+		background: rgba(255,206,219,0.89);
+		border: 1px pink;
+		border-radius: 50%;
+		float: left;
+		text-align: center;
+	} button:hover {
+        box-shadow: 1px 2px 4px lightblue;
+    } button:active {
+        background: darkgray;
+	} #lychee1 {
+		position: absolute;
+		left:0;
+		animation-name:flow;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused; 
+		animation-timing-function: ease-in-out;
+	 } #lychee1:active{
+		 animation-play-state: running;
+	}@keyframes flow{
+        0% {left: 0;}
+        100% {left: 120vw;}
 	} p {
 		margin: 30px auto;
 		width: 768px;
@@ -87,7 +117,7 @@
 		
 		
 		
-	  <p><img src="Lychee_AdobeStock_531402483.jpeg" alt="Lychee image"/>Throughout my childhood I would hear stories about my grandmother, an avid plant lover with a home surrounded with carefully tended flowers, bushes, and trees. Her most prized plant was the lychee tree in her backyard. It has been there ever since she was a child, and bore her favorite fruit. Hearing these stories filled me with dreams of visiting her and her treasured garden, but unfortunately she lives in Sinaloa, Mexico. </p>
+	  <p><img id= "lychee" src="Lychee_AdobeStock_531402483.jpeg" alt="Lychee image"/>Throughout my childhood I would hear stories about my grandmother, an avid plant lover with a home surrounded with carefully tended flowers, bushes, and trees. Her most prized plant was the lychee tree in her backyard. It has been there ever since she was a child, and bore her favorite fruit. Hearing these stories filled me with dreams of visiting her and her treasured garden, but unfortunately she lives in Sinaloa, Mexico. </p>
 		
     <p> When I was four years old, my uncle took a trip to Mexico and brought back a brown box filled to the brim with lychees from my grandmother's tree. My sisters and I gathered around the kitchen table snacking on the sweet little pearls as our parents reminisced with my uncle about their home country and childhood. I remember easily ripping open the spiky red skin of the lychee, and the squishy white ball almost slipping out of my hands. The sweet floral aroma filled the air as juice began to seep out of the little ball. I excitedly plopped it into my mouth. It burst open, sending a wave of sugary sweetness swirling through my mouth. It was like a flower was soaked in sugarcane and jellied into a delicious little pouch. The smooth seed at the center was easily discarded, and I dove right back into the box for another lychee. The freshness of those lychees was remarkable, especially considering the long journey to our home.</p> 
 		
@@ -95,6 +125,8 @@
 		
     <p> For most of their history lychees remained in China because of their incredibly short lifespan. Chinese text describes this short life span as the three day rule. This rule said that Lychee lose their color after one day, their fragrance after two days, and their flavor after three days. So how did a lychee tree get to my grandmother's yard? The spread of lychees began when seeds traveled through the Xijiang River, also known as the “Golden Waterway”, to the Hainan province. Crossbreeding eventually led to the lychee variety called Fei Zi Xiao, which translates to “The concubine smiles”. This is the lychee variety that we know today. In the 1700’s, lychees were transported to Burma, India, and greenhouses in England and France. In the 1800’s lychees finally became widespread; reaching Hawaii, Florida, and California. </p>
      <p> Our grandmother sends us a box of lychees every year. And every year we gather around our kitchen table snacking on lychees while our parents reminisce. Lychees have become a sweet tradition. They remind me of family, those that are with me and those that I’ve only heard about through stories. Sometimes I buy a lychee boba to satisfy my craving for that delicious white pearl, but it’s never quite as sweet as the lychees from my grandmother's lychee tree.</p>
+	<button onClick="document.getElementByID('lychee move').style.animationPlayState='running';">flow</button><img id="lychee1" src="lychee.png" alt="moving lychee" width="250px">
 	</div>
+	
 </body>
 </html>
