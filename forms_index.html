@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 4 Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+	{
+		margin: 0;
+		padding: 0;
+	}  #page {
+		width: 928px;
+		max-width: 100%;
+		height: auto;
+		min-height: 1228px;
+		background: white;
+		border: 0.5px solid darkgray;
+		margin: 0 auto;
+	}#button-bar {
+		width:100%;
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+		font: 12pt/3 'Montserrat';
+		font-weight: bold;
+		
+	} #button-bar li {
+		width: 100px;
+		height: 100px;
+		background: rgba(255,206,219,0.89);
+		border-radius: 50%;
+		float: left;
+		text-align: center;
+		line-height: 6em;
+	} a {
+		color:darkgray;
+		text-decoration:none;
+	} #button-bar a li:hover{
+		background: rgba(255,146,165,0.20);
+	} body {
+		background: whitesmoke;
+	} h1 {
+		margin: 60px;
+		text-align: center;
+		font: 40pt/1em 'Macondo Swash Caps';
+		text-shadow: 2px 3px 4px lightblue;
+	} form {
+        width: 600px;
+        min-height: 600px;
+        padding: 24px;
+        background: lightpink;
+        margin: 36px auto;
+        border: 4px solid #F06168;
+        box-shadow: 2px 3px 6px lightblue;
+        border-radius: 18px;
+        font: 12pt/1.2em 'Montserrat';
+    } input {
+        margin-bottom: 6px;
+    } input[type=text] {
+        width: 100%;
+    } input[type=submit] {
+        width: 125px;
+        height: 40px;
+        margin: 24px auto 0 auto;
+        display: block;
+        background: #F06168;
+        border-radius: 50px;
+    } fieldset {
+        margin-top: 18px;
+    } #personal input, #submit {
+        width: 100%;
+        height: 24px;
+        margin-bottom: 12px;
+    } p {
+        font: 14pt/1.4em 'Montserrat';
+        width: 600px;
+        margin: 8px auto;
+    } ul {
+        width: 550px;
+        height: 50px;
+        display: grid;
+        grid-template: auto / auto auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 36px auto;
+    }
+	</style>
+</head>
+
+<body>
+	<div id="page">
+		<p><font color="#F06168">
+			<h1>Contact Us with your Sweets</h1>
+		<header id = "button-bar">
+			<a href="https://marscebrex.github.io/grc365/Index.html"><li>Home</li></a>
+			<a href="https://marscebrex.github.io/grc365/Java_index.html"><li>Recipes</li></a>
+			<a href="https://marscebrex.github.io/grc365/grid_index.html"><li>Top Treates</li></a>
+			<a href="https://marscebrex.github.io/grc365/responsive_index.html"><li>Sweets</li></a>
+			<li>Create</li>
+			</header></font></p>
+		
+<form action="https://formsubmit.co/xiomara.cebreros8607@yahoo.com" method="post">
+    <label for="fname">First name</label><br/>
+    <input type="text" id="fname" value="First name" /><br/>
+    <label for="lname">Last name</label><br/>
+    <input type="text" id="lname" value="Last name" /><br/>
+
+    <fieldset>
+    <legend>What would you like to Contribute?&nbsp; (check one)</legend>
+    <input type="radio" name="services" id="review" value="review" />
+    <label for="review">Reviews&nbsp;</label>
+    <br/>
+    <input type="radio" name="services" id="question" value="question" />
+    <label for="question">Questions</label>
+    <br/>
+    <input type="radio" name="services" id="recipe" value="recipe" />
+    <label for="recipe">A Lychee Recipe&nbsp;&nbsp;</label>
+    <br/>
+    <input type="radio" name="services" id="other" value="Other" />
+    <label for="other">Other</label>
+    </fieldset>
+    
+    <fieldset>
+    <legend>How would you rate our lychee recipes?</legend>
+    <select>
+        <option value="">What did you think?</option>
+        <option value="month">Great!</option>
+        <option value="quarter">Good</option>
+        <option value="year">Could do Better</option>
+		<option value="year">Not Good</option>
+		<option value="not sure">Not sure</option>
+    </select>
+    </fieldset>
+    <fieldset>
+    <legend>Message</legend>
+    <textarea rows="6" cols="70" value="message"></textarea>
+    </fieldset>
+    <input type="submit" value="Submit Form" />
+    </form>
+	</div>
+</body>
+</html>
